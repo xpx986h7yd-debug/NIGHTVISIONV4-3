@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* halo pulse synced */
+@keyframes haloPulse {
+  0%,100% { opacity: .15; }
+  50% { opacity: .35; }
+}
+.halo-pulse {
+  animation: haloPulse 4s ease-in-out infinite;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+  background-color: #000;
+  color: #fff;
+}
